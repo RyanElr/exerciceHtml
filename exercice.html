@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr" dir"ltr">
   <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <link rel="stylesheet" href="exercice.css">
-    <title>Exercice6</title>
+    <title></title>
   </head>
   <body>
-      <div class="rect2"></div>
-      <div class="rect1"></div>
-      <div class="rect4"></div>
-      <div class="rect5"></div>
-      <div class="rect3"></div>
-      <div class="rect6"></div>
-      <div class="rect7"></div>
-      <div class="rect8"></div>
-      <div class="rect3"></div>
-      <div class="rect9"></div>
-  </body>
+    <form action="">
+      <fieldset class="color1">
+        <legend class="color1">Votre identité</legend>
+        <ol>
+          <li> Nom :  <input type="text" name="nom" value="Nom"></li>
+          <li> Prénom : <input type="text" name="prenom" value="Prénom"></li>
+          <li> Adresse mail : <input type="text" name="mail" value="Adresse mail"></li>
+        </ol>
+      </fieldset>
+      <fieldset class="color2">
+        <legend class="color2">Adresse de livraison</legend>
+        <ol>
+          <li> Adresse : <textarea rows="4" cols="50" name="adresse"></textarea></li>
+          <li> Code Postal : <input type="text" name="cp" value="Code postal"></li>
+          <li> Ville : <input type="text" name="ville" value="Ville"></li>
+        </ol>
+      </fieldset>
+      <fieldset class="color3">
+        <legend class="color3">Informations de réglement</legend>
+        <ol>
+          <li>
+            Type de carte bancaire : <br>
+            <input type="radio" name="CBType">VISA</input> <br>
+            <input type="radio" name="CBType">Mastercard</input>
+          </li>
+          <li> Numéro de carte : <input type="text" name="numcarte" value="Numéro de carte"></li>
+          <li> Code de sécurité : <input type="text" name="codesecu" value="Code de sécurité"></li>
+          <li> Nom du titulaire : <input type="text" name="titlaire" value="Nom du titulaire"></li>
+        </ol>
+      </fieldset>
+      <input type="submit" value="J'achète!">
+    </form>
+   </body>
 </html>
